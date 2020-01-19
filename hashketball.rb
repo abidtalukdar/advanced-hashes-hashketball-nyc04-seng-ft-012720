@@ -212,17 +212,19 @@ end
 
 def most_points_scored
   points = 0
+  mvp = ""
   game_hash.each do |key, value|
     value.each do |second_key, second_value|
       if second_key == :players
         second_value.each do |player_info|
           if player_info[:points] > points
             points = player_info[:points]
+            mvp = player_info[:player_name]
           end
         end
       end
     end   
   end 
-  return points
+  return mvp
 end
 
