@@ -250,8 +250,9 @@ def winning_team
     end
   end  
   if nets > hornets
-      return 'Brooklyn Nets'
-    else
+    return 'Brooklyn Nets'
+  else
+    return 'Charlotte Hornets'
 end    
     
     
