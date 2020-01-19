@@ -233,7 +233,9 @@ def winning_team
   hornets = 0
   game_hash.each do |key, value|
     value.each do |second_key, second_value|
-      if value[:team_name] == 
+      if value[:team_name] == 'Brooklyn Nets'
+        if second_key == :players
+          
     
     end
   end  
