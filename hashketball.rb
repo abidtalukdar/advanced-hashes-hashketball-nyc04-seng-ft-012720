@@ -240,7 +240,7 @@ def winning_team
           end
         end    
       end
-      elsif value[:team_name] == 'Charlotte Hornets'
+      if value[:team_name] == 'Charlotte Hornets'
         if second_key == :players
           second_value.each do |player_info|
             hornets += player_info[:points]
