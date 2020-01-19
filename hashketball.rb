@@ -209,3 +209,22 @@ def big_shoe_rebounds
   end 
   return rebounds
 end
+
+def big_shoe_rebounds
+  rebounds = 0
+  big_foot = 0
+  game_hash.each do |key, value|
+    value.each do |second_key, second_value|
+      if second_key == :players
+        second_value.each do |player_info|
+          if player_info[:shoe] > big_foot
+            big_foot = player_info[:shoe]
+            rebounds = player_info[:rebounds]
+          end
+        end
+      end
+    end   
+  end 
+  return rebounds
+end
+
