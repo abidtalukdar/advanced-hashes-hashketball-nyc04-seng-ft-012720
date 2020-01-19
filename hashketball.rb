@@ -235,11 +235,24 @@ def winning_team
     value.each do |second_key, second_value|
       if value[:team_name] == 'Brooklyn Nets'
         if second_key == :players
-          
-    
+          second_value.each do |player_info|
+            nets += player_info[:points]
+          end
+        end    
+      end
+      elsif value[:team_name] == 'Charlotte Hornets'
+        if second_key == :players
+          second_value.each do |player_info|
+            hornets += player_info[:points]
+          end
+        end    
+      end
     end
   end  
-    
+  if nets > hornets
+      return 'Brooklyn Nets'
+    else
+end    
     
     
     
