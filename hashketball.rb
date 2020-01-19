@@ -231,5 +231,19 @@ end
 def winning_team 
   nets = 0 
   hornets = 0
-  game_hash.each do 
+  game_hash.each do |key, value|
+    value.each do |second_key, second_value|
+      if value[:team_name] == 
+    
+    end
+  end  
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
