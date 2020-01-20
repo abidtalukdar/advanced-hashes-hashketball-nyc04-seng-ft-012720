@@ -263,7 +263,7 @@ def player_with_longest_name
       if second_key == :players
         second_value.each do |player_info|
           if player_info[:player_name].length > longest_name.length
-            longest_name == player_info[:player_name]
+            longest_name = player_info[:player_name]
           end
         end
       end    
