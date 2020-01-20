@@ -279,13 +279,19 @@ def long_name_steals_a_ton?
     value.each do |second_key, second_value|
       if second_key == :players
         second_value.each do |player_info|
-          if player_info[:player_name] > steals
-            longest_name = player_info[:player_name] 
+          if player_info[:steals] > steals
+            steals = player_info[:steals]
+            long_name = player_info[:player_name] 
           end
         end
       end    
     end
   end
+  if long_name = player_with_longest_name
+    return true
+  else
+    return false
+  end  
 end  
 
 
