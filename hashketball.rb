@@ -278,7 +278,7 @@ def long_name_steals_a_ton?
     value.each do |second_key, second_value|
       if second_key == :players
         second_value.each do |player_info|
-          if long_name
+          if 
           
           end
         end
